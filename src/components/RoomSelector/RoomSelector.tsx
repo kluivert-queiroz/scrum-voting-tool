@@ -16,9 +16,12 @@ const RoomSelector = () => {
         onChange={handleRoomInputChange}
       />
       <Center inline>
-        <Button 
-				disabled={!roomId}
-				variant="light" component={Link} to={`room/${roomId}`}>
+        <Button
+          disabled={!roomId}
+          variant="light"
+          component={Link}
+          to={`room/${roomId}`}
+        >
           Join room
         </Button>
         <Button variant="filled">Create new room</Button>
